@@ -7,4 +7,4 @@
 
 - Description of their source of data: Dataset obtained from Kaggle
 
-- Questions they hope to answer with the data: Most expensive areas, areas with a good potential of real estate appraisal, understand the variables that drive the house prices the most.
+- Questions they hope to answer with the data: Most expensive areas, areas with a good potential of real estate appraisal, understand the variables that drive the house prices the most, know if the location of the house is really an important factor for the house to have a high or low price,What conditions  make a home's value high or low?, know which variables have a higher and lower correlation with the price of a house 
