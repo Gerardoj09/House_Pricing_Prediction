@@ -6,6 +6,12 @@ __pycache__/
 # .DS_Store
 
 .DS_Store
+.Rhistory
+
+
+#config files
+
+config.py
 
 # C extensions
 *.so
