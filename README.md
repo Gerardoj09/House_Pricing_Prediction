@@ -1,7 +1,7 @@
 # House_Pricing_Prediction
 
 
-- Selected topic: Hose pricing prediction
+- Selected topic: House pricing prediction
 
 - Reason why they selected their topic: To gain insight and better knowledge on what are the variables has the most impact in the housing market prices.
 It also seems like a good project where we can apply a machine learning model and put our knowledge to the test.
