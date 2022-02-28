@@ -1,5 +1,6 @@
 # House_Pricing_Prediction
 
+Presentation: https://docs.google.com/presentation/d/1RP4-LQ4zja44UlSFVeQPNpQE2bsh4QSUvL4yCp1ztZA/edit?usp=sharing 
 
 - Selected topic: House pricing prediction
 
