@@ -21,3 +21,7 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 - What variables have less influence on the increase or decrease in the price of a house?
 - What is the average size of a house in Iowa?
 - What is the average price of the value of the houses?
+
+### Analysis
+
+![image](https://user-images.githubusercontent.com/66183125/155927411-b19e09de-7088-44fc-990f-65780a12399a.png)
