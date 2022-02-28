@@ -14,6 +14,10 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 
 
 
-- Questions to answer:
-- 
-- Most expensive areas, areas with a good potential of real estate appraisal, understand the variables that drive the house prices the most, know if the location of the house is really an important factor for the house to have a high or low price,What conditions  make a home's value high or low?, know which variables have a higher and lower correlation with the price of a great house.
+### Questions to answer:
+
+- What neighborhoods have the highest value?
+- What variables most influence the increase or decrease in the price of a house?
+- What variables have less influence on the increase or decrease in the price of a house?
+- What is the average size of a house in Iowa?
+- What is the average price of the value of the houses?
