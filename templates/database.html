@@ -1,0 +1,25 @@
+
+{% include 'nav.html' %}
+
+  <div class="main">
+    <h1>Database from MongoDB</h1>
+    <table class="roundedCorners table">
+      <tr>
+        <th>LotArea</th>
+        <th>OverallQual</th>
+        <th>OverallCond</th>
+        <th>YearBuilt</th>
+        <th>YearRemodAdd</th>
+      </tr>
+ 
+      {% for datas in data %}
+      <tr>
+        <td>{{ datas['LotArea']}}</td>
+        <td>{{ datas['OverallQual']}}</td>
+        <td>{{ datas['OverallCond']}}</td>
+        <td>{{ datas['YearBuilt']}}</td>
+        <td>{{ datas['YearRemodAdd']}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+   </div>

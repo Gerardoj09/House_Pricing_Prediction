@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!---->
+{% include 'nav.html' %}
+<head>
+  <meta charset="UTF-8">
+  <title>ML House Pricing</title>
+</head>
+
+<body>
+
+ <div class=main>
+	<h1>House Price Prediction</h1>
+  <div>
+    <form action="{{ url_for('predict')}}"method="POST">
+       <label for>Lot Area</label>
+       <input type="text" class="form-control" name="Enter LotArea" placeholder="Enter Lot Area" required="required" />
+       <br>
+       <label for>Overall Quality</label>
+       <!--<input type="text" class="form-control" name="enter_overall_quality" placeholder="Enter Overall Quality" required="required" />-->
+       <select name="oq" class="col-12 form-control" type="text">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+        <option value=10>10</option>
+      </select>
+       <br>
+       <label for>Overall Condition</label>
+       <select name="oc" class="col-12 form-control">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+        <option value=10>10</option>
+      </select>
+       <br>
+       <label for>Year Built</label>
+       <input type="text" class="form-control" name="Enter YearBuilt" placeholder="Enter Year Built" required="required" />
+       <br>
+       <label for>Year of Remodelation</label>
+       <input type="text" class="form-control" name="Enter YearRemodAdd" placeholder="Enter Remodelation Year" required="required" />
+       <br>
+       <div>
+         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       </div>
+     </form>
+ 
+    <br>
+    <br>
+
+    {{ prediction_text }}
+
+    <br>
+
+
+
+ 
+   </div>
+
+</body>
+</html>

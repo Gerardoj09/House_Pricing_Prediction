@@ -1,0 +1,28 @@
+     <!-- Main Input For Receiving Query to our ML -->
+
+     <div>
+        <form action="{{ url_for('predict')}}"method="post">
+           <label for>Lot Area</label>
+           <input type="text" class="form-control" name="Enter LotArea" placeholder="Enter Lot Area" required="required" />
+           <br>
+           <label for>Overall Quality</label>
+           <input type="text" class="form-control" name="Enter OverallQual" placeholder="Enter Overall Quality" required="required" />
+           <br>
+           <label for>Overall Condition</label>
+           <input type="text" class="form-control" name="Enter OverallCond" placeholder="Enter Overall Condition" required="required" />
+           <br>
+           <label for>Year Built</label>
+           <input type="text" class="form-control" name="Enter YearBuilt" placeholder="Enter Year Built" required="required" />
+           <br>
+           <label for>Year of Remodelation</label>
+           <input type="text" class="form-control" name="Enter YearRemodAdd" placeholder="Enter Remodelation Year" required="required" />
+           <br>
+           <div>
+             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+           </div>
+         </form>
+     
+        <br>
+        <br>
+
+    <!---->
