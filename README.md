@@ -31,3 +31,9 @@ The first thing we do is check the distribution of our target variable and from 
 After this we have to check the correlation that the variables have with each other and even more important is to check what is the correlation that it has with the target variable, since here it will depend on which will be the most important variables to add to the model.
 
 ![image](https://user-images.githubusercontent.com/66183125/155927411-b19e09de-7088-44fc-990f-65780a12399a.png)
+
+As mentioned before, having chosen the most important variables or those with the most impact in the correlation analysis, we have to see how their information is distributed graphically and, from this, know what to do with these variables.
+
+![image](https://user-images.githubusercontent.com/66183125/155928886-8010157e-371b-49d4-b834-d71bb9b4f605.png)
+![image](https://user-images.githubusercontent.com/66183125/155928924-c98eb06c-300e-4172-bb05-bc17006ce68b.png)
+
