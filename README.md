@@ -32,7 +32,7 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 
 ## Description about the database
 
-#### The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
+### The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
 
 ## Machine Learning Analysis
 ### The first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
