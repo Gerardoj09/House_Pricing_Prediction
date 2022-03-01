@@ -27,24 +27,22 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 - What is the average price of the value of the houses?
 
 ## ETL
-
-### To clean and organize the raw data downloaded from Kaggle, first it was needed to 
+### To clean and organize the raw data downloaded from Kaggle, the number of features were reduced by dropping redundant columns and identify the categorical and numerical data. Some minor changes were conducted to adapt the data before start the transformation phase. To process categorical data, a get_dummies and LabelEnconder functions were applied.
 
 ## Description about the database
-
 ### The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
 
 ## Machine Learning Analysis
-### The first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
+### To start our analysis, the first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
 
 
-After this we have to check the correlation that the variables have with each other and even more important is to check what is the correlation that it has with the target variable, since here it will depend on which will be the most important variables to add to the model.
+## After this we have to check the correlation that the variables have with each other and even more important is to check what is the correlation that it has with the target variable, since here it will depend on which will be the most important variables to add to the model.
 
 ![image](https://user-images.githubusercontent.com/66183125/155927411-b19e09de-7088-44fc-990f-65780a12399a.png)
 
-As mentioned before, having chosen the most important variables or those with the most impact in the correlation analysis, we have to see how their information is distributed graphically and, from this, know what to do with these variables.
+## As mentioned before, having chosen the most important variables or those with the most impact in the correlation analysis, we have to see how their information is distributed graphically and, from this, know what to do with these variables.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928886-8010157e-371b-49d4-b834-d71bb9b4f605.png)
 ![image](https://user-images.githubusercontent.com/66183125/155928924-c98eb06c-300e-4172-bb05-bc17006ce68b.png)
