@@ -13,12 +13,10 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 ## Resources
  
 - Dataset obtained from Kaggle https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data 
-- Datasets : test.csv, train.csv , Data_Description.txt
-- Software :Python 3.7.0, Html, Css, Sql , Mongodb, JupyterNotebook
+- Datasets: test.csv, train.csv, Data_Description.txt
+- Software: Python 3.7.0, HTML, CSS, SQL, MongoDB, JupyterNotebook
 
 #### Presentation: https://docs.google.com/presentation/d/1RP4-LQ4zja44UlSFVeQPNpQE2bsh4QSUvL4yCp1ztZA/edit?usp=sharing
-
-
 
 ### Questions to answer:
 
@@ -28,8 +26,16 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 - What is the average size of a house in Iowa?
 - What is the average price of the value of the houses?
 
-### Analysis
-The first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
+## ETL
+
+### To clean and organize the raw data downloaded from Kaggle, first it was needed to 
+
+## Description about the database
+
+#### The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
+
+## Machine Learning Analysis
+### The first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
 
