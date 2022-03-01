@@ -27,7 +27,7 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 - What is the average price of the value of the houses?
 
 ## ETL
-### To clean and organize the raw data downloaded from Kaggle, the number of features were reduced by dropping redundant columns and identify the categorical and numerical data. Some minor changes were conducted to adapt the data before start the transformation phase. To process categorical data, a get_dummies and LabelEnconder functions were applied.
+### To clean and organize the raw data downloaded from Kaggle, the number of features were reduced by dropping redundant columns and identifying categorical and numerical data. Some minor changes were conducted to adapt the data before start the transformation phase. To process categorical data, a get_dummies and LabelEnconder functions were applied.
 
 ## Description about the database
 ### The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
