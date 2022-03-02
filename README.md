@@ -26,13 +26,13 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 - What is the average size of a house in Iowa?
 - What is the average price of the value of the houses?
 
-## ETL
+
 ### To clean and organize the raw data downloaded from Kaggle, the number of features were reduced by dropping redundant columns and identifying categorical and numerical data. Some minor changes were conducted to adapt the data before start the transformation phase. To process categorical data, a get_dummies and LabelEnconder functions were applied.
 
 ## Description about the database
 ### The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
 
-## Machine Learning Analysis
+## ETL
 ### To start our analysis, the first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
