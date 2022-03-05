@@ -39,6 +39,11 @@ The dataset is stored in MongoDB which is classified as a NoSQL database which u
 
 ## ETL
 
+The first thing that was done was to do a little exploratory analysis about our database, since it is important to know what type of data you are going to work with. If they are numerical data such as floating point or integer, or failing that, if they are categorical data, they could become nominal or ordinal. Each type of data must be given a different analysis and treatment.
+
+![image](https://user-images.githubusercontent.com/66183125/156894833-50f38fd6-644c-4ac1-b956-1e5ded995833.png)
+
+
 To start our analysis, the first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
