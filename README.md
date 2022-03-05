@@ -39,7 +39,7 @@ The dataset is stored in MongoDB which is classified as a NoSQL database which u
 
 ## ETL
 
-The first thing that was done was to do a little exploratory analysis about our database, since it is important to know what type of data you are going to work with. If they are numerical data such as floating point or integer, or failing that, if they are categorical data, they could become nominal or ordinal. Each type of data must be given a different analysis and treatment.
+The first thing that was done was to take a quick look at our database, since it is important to know what type of data you are going to work with. If they are numerical data such as floating point or integer, or failing that, if they are categorical data, they could become nominal or ordinal. Each type of data must be given a different analysis and treatment.
 
 ![image](https://user-images.githubusercontent.com/66183125/156894833-50f38fd6-644c-4ac1-b956-1e5ded995833.png)
 
