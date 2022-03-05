@@ -4,7 +4,7 @@
 
 Buying a house can be a very exhausting process, there is a great variety of houses, many factors that can cause the price of a house to increase or decrease, it may be located in an area that you like or that you do not like so much, there are simply so many factors that must be taken into consideration before being able to buy a house according to the budget that one has. For this project we will try to predict the value of houses in the state of Iowa and more specifically in the Ames area. Our dataset consists of 79 variables that describe in detail the characteristics of the houses in this state. 
 
-We will apply different machine learning models with the hope of having the best possible accuracy when predicting the value of houses. The main reasons for choosing this topic was wanting to know a little more about how the home market works and to test our knowledge of machine learning, we believe that it is a good test for us to know what kind of models we should work with and In addition to this, what kind of treatment should we give to the data.
+We will apply different machine learning models with the hope of having the best possible accuracy when predicting the value of houses. The main reasons for choosing this topic was wanting to know a little more about how the home market works and to test our knowledge of machine learning, we believe that it is a good test for us to know what kind of models we should work with and in addition to this, what kind of treatment should we give to the data.
 
 ## List Members
 
@@ -32,6 +32,9 @@ We will apply different machine learning models with the hope of having the best
 To clean and organize the raw data downloaded from Kaggle, the number of features were reduced by dropping redundant columns and identifying categorical and numerical data. Some minor changes were conducted to adapt the data before start the transformation phase. To process categorical data, a get_dummies and LabelEnconder functions were applied.
 
 ## Description about the database
+
+Our dataset consists of a total of 81 variables, both numerical and categorical, that focus on the description of the characteristics of a house, such as what material is it built on? What neighborhood is it in? How many bedrooms does it have? What does a garage have and what conditions is it in? . The most important variable within the whole set is 'SalePrice' since this will be our target variable where we hope to generate a model that can predict its value as correctly as possible.
+
 The dataset is stored in MongoDB which is classified as a NoSQL database which uses JSON-like files and schemas.
 
 ## ETL
