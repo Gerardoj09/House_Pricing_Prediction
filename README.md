@@ -31,7 +31,7 @@ We will apply different machine learning models with the hope of having the best
 
 To clean and organize the raw data downloaded from Kaggle, the number of features were reduced by dropping redundant columns and identifying categorical and numerical data. Some minor changes were conducted to adapt the data before start the transformation phase. To process categorical data, a get_dummies and LabelEnconder functions were applied.
 
-## Description about the database
+## Database description  
 
 Our dataset consists of a total of 81 variables, both numerical and categorical, that focus on the description of the characteristics of a house, such as what material is it built on? What neighborhood is it in? How many bedrooms does it have? What does a garage have and what conditions is it in? . The most important variable within the whole set is 'SalePrice' since this will be our target variable where we hope to generate a model that can predict its value as correctly as possible.
 
