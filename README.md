@@ -43,18 +43,22 @@ The first thing that was done was to take a quick look at our database, since it
 
 ![image](https://user-images.githubusercontent.com/66183125/156894833-50f38fd6-644c-4ac1-b956-1e5ded995833.png)
 
-
-To start our analysis, the first thing we do is check the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
+After seeing how our database was made up, we started by knowing the target variable 'SalePrice', the first thing we did was checking the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
 
 
-After this we have to check the correlation that the variables have with each other and even more important is to check what is the correlation that it has with the target variable, since here it will depend on which will be the most important variables to add to the model.
+As previously mentioned, if we do not count the objective variable, we have a dataset made up of 80 columns from which we have to correctly choose the ones that support the model that we will generate later in order to predict the price of houses. For this reason, we made a heatmap which will show us all the variables that have a correlation greater than .46 with our dependent variable, a correlation of .40 or .50 can be considered as a median correlation, any value below this was considered such as a low correlation or a null correlation between our variables, in addition to choosing variables with no correlation could affect the result of our model. For the same reason, they only chose 13 variables with the highest possible correlation within the numerical variables.
 
 ![image](https://user-images.githubusercontent.com/66183125/155927411-b19e09de-7088-44fc-990f-65780a12399a.png)
 
-As mentioned before, having chosen the most important variables or those with the most impact in the correlation analysis, we have to see how their information is distributed graphically and, from this, know what to do with these variables.
+
+Once the most important numerical variables have been chosen, now it is time to analyze them one by one to know how the distribution of their data is, and thus know if any of them are skewed to the right or left, and if it is necessary also apply the natural logarithm to nullify its skweness as much as possible
 
 ![image](https://user-images.githubusercontent.com/66183125/155928886-8010157e-371b-49d4-b834-d71bb9b4f605.png)
 ![image](https://user-images.githubusercontent.com/66183125/155928924-c98eb06c-300e-4172-bb05-bc17006ce68b.png)
 
+All the chosen variables having a high correlation, we could expect that graphically they would have a good interaction with the price of the houses. So we will plot the relationship they have with our target variable through scatter plots.
+
+![image](https://user-images.githubusercontent.com/66183125/156906422-30065499-85be-40a3-84f6-ad46689cc078.png)
+![image](https://user-images.githubusercontent.com/66183125/156906430-fd00ef2e-63e6-4818-aea3-3f674503ca34.png)
