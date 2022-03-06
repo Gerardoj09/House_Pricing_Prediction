@@ -62,3 +62,11 @@ All the chosen variables having a high correlation, we could expect that graphic
 
 ![image](https://user-images.githubusercontent.com/66183125/156906422-30065499-85be-40a3-84f6-ad46689cc078.png)
 ![image](https://user-images.githubusercontent.com/66183125/156906430-fd00ef2e-63e6-4818-aea3-3f674503ca34.png)
+
+Apparently there is a good relationship between 'SalePrice' and the variables that were chosen, there is really nothing out of the ordinary,depending on how high the correlation is, the scatter plot will look better or worst. So now is the time to review the variables in general in more detail, so in the notebook the dataframe was divided in to 4 parts  so  in this way we can pay more attention to each variable. What we are trying to look for  missing values, different type of data, and any other variable that seems useless to us.
+
+This is just one of the parts that was divided , and it was applied the info function to see missing values and the type of variable it is.But we will cover more examples of the decisions made in this section.
+
+![image](https://user-images.githubusercontent.com/66183125/156907203-be878460-9d18-42c5-9fb7-e7ff98165fbe.png)
+
+
