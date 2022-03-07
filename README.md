@@ -103,3 +103,38 @@ Then, for all the nominal variables, their transformation to numerics was throug
 
 ![image](https://user-images.githubusercontent.com/66183125/156962305-2fd3edce-99ff-4a34-bc45-79d91da1e8aa.png)
 ![image](https://user-images.githubusercontent.com/66183125/156962341-22f62a1f-8f83-4c3b-9382-3dc0a4972e1a.png)
+
+### Applying Machine Learning Models
+
+Having our database ready, it is time to apply machine learning models to find out which of all can best predict the price of houses.Four models were chosen to be able to assess which of them best predicted the price of houses. The models were the following:
+
+- RandomForestRegressor
+- XGB Regressor
+- Multiple Linear Regression
+- Gradient Boosting Regressor
+
+For the 4 models the conditions were the same, the dataset was divided into 80% training set and 20% testing set, and the values ​​of the database would be randomly chosen to conform both bases.
+
+![image](https://user-images.githubusercontent.com/66183125/156967455-ab2bd132-8d12-48a7-8efc-2183684cd53d.png)
+
+And the way in which the best model would be chosen would be through two metrics:
+
+- The first evaluation would be through 'mean_squared_error', where we would seek to have the lowest error
+
+- The second evaluation would be through R2, where what we are looking for is to have the highest possible value
+
+## Results
+
+These were the results obtained from the 4 selected models:
+
+### RandomForestRegressor
+![image](https://user-images.githubusercontent.com/66183125/156968657-74989954-401f-48db-8ce4-5bc0b10d1fa0.png)
+
+### XGB Regressor
+![image](https://user-images.githubusercontent.com/66183125/156968704-05f62d7d-7ad9-4ea3-b613-ceb44be5313b.png)
+
+### Multiple Linear Regression
+![image](https://user-images.githubusercontent.com/66183125/156968735-76f16eaf-56d7-4124-a342-7509159e73f1.png)
+
+### Gradient Boosting Regressor
+![image](https://user-images.githubusercontent.com/66183125/156968815-1b91c5e6-aa64-49b6-99aa-9f88603f412c.png)
