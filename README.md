@@ -43,15 +43,17 @@ The first thing that was done was to take a quick look at our database, since it
 
 ![image](https://user-images.githubusercontent.com/66183125/156894833-50f38fd6-644c-4ac1-b956-1e5ded995833.png)
 
+### Data Distribution
 After seeing how our database was made up, we started by knowing the target variable 'SalePrice', the first thing we did was checking the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
 
-
+### Correlation
 As previously mentioned, if we do not count the objective variable, we have a dataset made up of 80 columns from which we have to correctly choose the ones that support the model that we will generate later in order to predict the price of houses. For this reason, we made a heatmap which will show us all the variables that have a correlation greater than .46 with our dependent variable, a correlation of .40 or .50 can be considered as a median correlation, any value below this was considered such as a low correlation or a null correlation between our variables, in addition to choosing variables with no correlation could affect the result of our model. For the same reason, they only chose 13 variables with the highest possible correlation within the numerical variables.
 
 ![image](https://user-images.githubusercontent.com/66183125/155927411-b19e09de-7088-44fc-990f-65780a12399a.png)
 
+### Distribution of the most correlated variables and scatter plots against the target variable
 
 Once the most important numerical variables have been chosen, now it is time to analyze them one by one to know how the distribution of their data is, and thus know if any of them are skewed to the right or left, and if it is necessary also apply the natural logarithm to nullify its skweness as much as possible
 
@@ -63,7 +65,11 @@ All the chosen variables having a high correlation, we could expect that graphic
 ![image](https://user-images.githubusercontent.com/66183125/156906422-30065499-85be-40a3-84f6-ad46689cc078.png)
 ![image](https://user-images.githubusercontent.com/66183125/156906430-fd00ef2e-63e6-4818-aea3-3f674503ca34.png)
 
-Apparently there is a good relationship between 'SalePrice' and the variables that were chosen, there is really nothing out of the ordinary,depending on how high the correlation is, the scatter plot will look better or worst. So now is the time to review the variables  in more detail, to do this in the notebook the dataframe was divided in to 4 parts  so  in this way we can pay more attention to each variable. We are trying to look for  missing values, different type of data, and any other variable that seems useless to us.
+Apparently there is a good relationship between 'SalePrice' and the variables that were chosen, there is really nothing out of the ordinary,depending on how high the correlation is, the scatter plot will look better or worst. 
+
+### Missing data, Dropping columns and Replacing values
+
+Now is the time to review the variables  in more detail, to do this in the notebook the dataframe was divided in to 4 parts  so  in this way we can pay more attention to each variable. We are trying to look for  missing values, different type of data, and any other variable that seems useless to us.
 
 This is just one of the parts that was divided , and it was applied the info function to see missing values and the type of variables it has, but we will cover more examples of the decisions made in this section.
 
@@ -80,3 +86,20 @@ Another problem we encountered was making the decision of whether it was best to
 
 ![image](https://user-images.githubusercontent.com/66183125/156956068-15099e39-9894-4239-a24c-cf6062714e06.png)
 
+### Transforming categorical data
+
+At the moment of wanting to transform the categorical data to numerical data, our first problem to analyze is, what kind of categorical data do we have? , since we can have nominal categorical data and ordinal categorical data, so the same treatment cannot be applied to both cases.
+
+- Nominal data is data that we assign individual values ​​to named categories that do not have a value or range
+- Ordinal data have values that are assigned to categories that have some sort of order
+
+The examples that we can give would be the neighborhood variable, which would be categorized as a nominal variable since no matter which neighborhood is chosen, it will not have any order as such. But instead the variable 'BsmtQual', shows us different types of values ​​to which we can give a certain order, for example if it does not have a basement it will be given a value of 0, however if it has a value of 'Excellent' that is the highest value, it will be given a value of 5
+
+![image](https://user-images.githubusercontent.com/66183125/156962216-a603152d-328f-4969-97ef-72e3cf099fca.png)
+
+![image](https://user-images.githubusercontent.com/66183125/156962128-92e29e5d-72e7-475e-9f9b-de9f1a8f0180.png)
+
+Then, for all the nominal variables, their transformation to numerics was through creating dummy variables in each of their values. and in the case of ordinal variables, he gave them a specific value depending on the order that each value will carry
+
+![image](https://user-images.githubusercontent.com/66183125/156962305-2fd3edce-99ff-4a34-bc45-79d91da1e8aa.png)
+![image](https://user-images.githubusercontent.com/66183125/156962341-22f62a1f-8f83-4c3b-9382-3dc0a4972e1a.png)
