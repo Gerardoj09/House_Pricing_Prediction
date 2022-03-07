@@ -148,5 +148,6 @@ A clear example of what was mentioned is that having a normal distribution of yo
 
 Decisions also had to be made about how much data you can leave, usually when you work with models the amount of data you have is essential to be able to generate models with good results. For this project, decisions were made such as eliminating missing data, useless columns, information had to be replaced so that in this way we would avoid having to eliminate the variable completely. You have to be smart when knowing what data to work with and what data not to.
 
-
 There were many times when we thought we had the correct result and in the end it was not so, so we had to go back to the beginning to make more modifications and wait to see a new result, this was the process several times until we obtained a result that better convinced us.
+
+Finally, the choice of the model was also somewhat difficult since the three models performed very well, in addition to this, as the decision was made that the information in the training database and the testing database was out of randomly, each time the models were run they gave different results each time they were run. So after several attempts on each model, the one that will perform the best most of the time, that would be the model of choice to predict house prices.
