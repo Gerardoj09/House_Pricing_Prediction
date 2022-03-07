@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+{% include 'grid.html' %}
+<head>
+  <meta charset="UTF-8">
+  <title>ML House Pricing</title>
+</head>
+
+<body>
+ <article class=main>
+	<h1>House Price Prediction</h1>
+  <br>
+    <form action="{{ url_for('predict')}}"method="POST">
+       <label for>Overall Quality</label>
+       <!--<input type="text" class="form-control" name="enter_overall_quality" placeholder="Enter Overall Quality" required="required" />-->
+       <select name="oq" class="col-6 form-control" type="text">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+        <option value=10>10</option>
+      </select>
+      <br>
+       <label for>Year Built</label>
+       <input type="text" class="form-control" name="YearBuilt" placeholder="Enter Year Built" required="required"/>
+       <br>
+       <label for>Year of Remodelation</label>
+       <input type="text" class="form-control" name="YearRemodAdd" placeholder="Enter Year of Remodelation" required="required"/>
+       <br>
+       <label for>Ground Living Area (Above grade "ground" living area square feet: from 0 to 6,000 feet)</label>
+       <input type="text" class="form-control" name="GrLivArea" placeholder="Enter Ground Living Area" required="required"/>
+       <br>
+       <label for>Garage Cars</label>
+       <select name="gc" class="col-6 form-control">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+      </select>
+        <br>
+        <label for>Garage Area (Size of garage in square feet: from 0 to 2,000 feet)</label>
+        <input type="text" class="form-control" name="GarageArea" placeholder="Enter Garage Area" required="required"/>
+        <br>
+       <div>
+         <button class="button" style="vertical-align:middle"><span>Predict</span></button>
+       </div>
+     </form>
+     <br>
+     <h5>{{ prediction_text }}</h5>
+  </article>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+#DS_Store
+.DS_Store
+
+__pycache__/
+
+env_test/
+
+config.py
+
+.ipynb_checkpoints/

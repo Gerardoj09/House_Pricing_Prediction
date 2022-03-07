@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'grid.html' %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <article class="main">
+    <h1>Database from MongoDB</h1>
+    <br>
+    <h3>Analysis:</h3>
+    <p>
+      The first thing we did was to check the distribution of our target variable, that as per out plot below, shows skewness to the right.
+      So in order to correct this and apply our ML Model, we had to use the logarithmic function to mitigate it.
+    </p>
+
+    <center>
+      <img class="img_skew" src="../static/images/skew.png" alt="home_main">
+    </center>
+    <center>
+      <img class="img_normal" src="../static/images/normal.png" alt="home_main">
+    </center>
+    <br>
+    <p>A correlation matrix is a table showing correlation coefficients between variables. So, to be able to define our variables that we would be using for our Machine Learning Model we made a correlation matrix. With this plot, we can easily spot the correlation between each one of the variables including the target variable. For the sake of simplicity and usability of this web app, we only chose <span class="bolded">6 out of 80 variables</span>, without sacrificing the accuracy of the model (≈ 75% - 80%) so the user can play around with the model in the Prediction tab.</p>
+    <center>
+      <img class="img_heatmap" src="../static/images/heatmap.png" alt="home_main">
+    </center>
+    <br>
+    <p>
+      From the previously analysis made the following database is being read from MongoDB:
+    </p>
+    <table class="roundedCorners table">
+      <tr>
+        <th>OverallQual</th>
+        <th>YearBuilt</th>
+        <th>YearRemodAdd</th>
+        <th>GrLivArea</th>
+        <th>GarageCars</th>
+        <th>GarageArea</th>
+        <th>SalePrice</th>
+      </tr>
+ 
+      {% for datas in data %}
+      <tr>
+        <td>{{ datas['OverallQual']}}</td>
+        <td>{{ datas['YearBuilt']}}</td>
+        <td>{{ datas['YearRemodAdd']}}</td>
+        <td>{{ datas['GrLivArea']}}</td>
+        <td>{{ datas['GarageCars']}}</td>
+        <td>{{ datas['GarageArea']}}</td>
+        <td>{{ datas['SalePrice']}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    {% for table in tables %}
+            {{ table|safe }}
+    {% endfor %}
+
+  </article>
+  
+</body>
+</html>

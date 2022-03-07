@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* add this style to the childs of this grid container*/
+.grid-container > * {
+    box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    
+}
+/*bold a word*/
+/*<span class="bolded">word</span>*/
+.bolded { font-weight: bolder; }
+
+/* area that we wants to belong to each element*/
+.header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+}
+  
+.sidebar{
+    text-align:left;
+    grid-area: sidebar;
+    background-color: rgb(46, 46, 46);
+}
+
+.sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 15%;
+    width: 119.3%;
+}
+
+.sidebar li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: rgb(46, 46, 46);
+    color: #ffffff;
+}
+
+.sidebar li:hover {
+    background-color: #0099cc;
+    transition-duration: 0.4s;
+  }
+
+.main{
+    grid-area: main;
+    background-color: white;
+    text-align: justify;
+}
+
+.img_main{
+    margin: 3%;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .img_heatmap{
+    margin-left: 5%;
+    max-width: 90%;
+    *display: flex;
+    justify-content: flex-end;
+  }
+
+  .img_skew{
+    margin-left: 5%;
+    max-width: 60%;
+    *display: flex;
+    justify-content: flex-end;
+  }
+  .img_normal{
+    margin-left: 5%;
+    max-width: 60%;
+    *display: flex;
+    justify-content: flex-end;
+  }
+
+  .line_chart{
+
+    max-width: 50%;
+    margin-left: 25%;
+
+  }
+
+  .plots{
+
+    margin-top: 5%;
+  }
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+.content {
+    grid-area: content;
+}
+
+table.roundedCorners { 
+    border: 1px solid black;
+    border-radius: 13px; 
+    border-spacing: 0;
+    }
+  table.roundedCorners td, 
+  table.roundedCorners th { 
+    border-bottom: 1px solid black;
+    padding: 10px; 
+    }
+  table.roundedCorners tr:last-child > td {
+    border-bottom: none;
+  }
+
+  .table{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+/*Whith this template we can move around the element's order*/
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "header" 100px
+        "sidebar" 100px
+        "menu" auto
+        "main" auto
+        "footer" 100px; 
+}
+
+@media (min-width: 300px){
+    .grid-container{
+        /*new arrange of the areas, we complete it with columns in the right side*/
+        grid-template-columns: 250px auto;
+        grid-template-rows: 100px auto 70px;
+        grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+    }
+
+    }
+
+

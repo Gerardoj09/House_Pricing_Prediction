@@ -1,0 +1,45 @@
+<h5>Average House Prices over time</h5>
+
+<div class="line_chart">
+<canvas id="myChart" responsive= false width="100" height="100"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const labelsp = [
+        "One Garage",
+        "Two Garages",
+        "Three Garages",
+        "Four Garages"
+    ];
+  
+    const datap = {
+      labels: labels,
+      datasets: [{
+        label: "none",
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [
+            '{% for y in valuesp %}',
+            '{{ y }}',
+            '{% endfor %}'
+],
+      }]
+    };
+  
+    const configp = {
+      type: 'doughnut',
+      data: data,
+      options: {
+
+      }
+    };
+  </script>
+
+<script>
+    const myChartp = new Chart(
+    document.getElementById('myChartp'),
+    config
+    );
+</script>
