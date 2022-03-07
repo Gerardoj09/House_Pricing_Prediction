@@ -63,10 +63,20 @@ All the chosen variables having a high correlation, we could expect that graphic
 ![image](https://user-images.githubusercontent.com/66183125/156906422-30065499-85be-40a3-84f6-ad46689cc078.png)
 ![image](https://user-images.githubusercontent.com/66183125/156906430-fd00ef2e-63e6-4818-aea3-3f674503ca34.png)
 
-Apparently there is a good relationship between 'SalePrice' and the variables that were chosen, there is really nothing out of the ordinary,depending on how high the correlation is, the scatter plot will look better or worst. So now is the time to review the variables in general in more detail, so in the notebook the dataframe was divided in to 4 parts  so  in this way we can pay more attention to each variable. What we are trying to look for  missing values, different type of data, and any other variable that seems useless to us.
+Apparently there is a good relationship between 'SalePrice' and the variables that were chosen, there is really nothing out of the ordinary,depending on how high the correlation is, the scatter plot will look better or worst. So now is the time to review the variables  in more detail, to do this in the notebook the dataframe was divided in to 4 parts  so  in this way we can pay more attention to each variable. We are trying to look for  missing values, different type of data, and any other variable that seems useless to us.
 
 This is just one of the parts that was divided , and it was applied the info function to see missing values and the type of variables it has, but we will cover more examples of the decisions made in this section.
 
+A clear example that is seen for the treatment of missing values ​​is that there are variables that are not worth considering for the simple fact that the amount of data they have is minimal. In the image above you can see how the 'Alley' variable only has 198 values ​​out of 2919, so variables like this that only have a very small amount of data have to be removed from the dataset.
+
 ![image](https://user-images.githubusercontent.com/66183125/156907203-be878460-9d18-42c5-9fb7-e7ff98165fbe.png)
 
+We were also able to observe variables that mostly had only one of two possible values, since the difference is too great, it is best to remove the variable since it will not have any analysis effect, a variable that almost entirely has 100% of a value.
+
+![image](https://user-images.githubusercontent.com/66183125/156953307-70afe4c0-d4e1-4418-9129-652e7f9870c7.png)
+![image](https://user-images.githubusercontent.com/66183125/156953359-c50818aa-5319-4b50-a0d1-65927c1195c5.png)
+
+Another problem we encountered was making the decision of whether it was best to remove the rows with missing values ​​from certain columns or whether it was best to replace those values ​​to avoid losing information, but to be honest, it is not a decision or a rule that can be applied to all cases. for example there are variables that have missing data for a reason, such as firplaces or basement, they appear to us as if certain rows had no information but this is not by mistake, it is simply that these houses do not have any of the characteristics mentioned, for the same reason all the variables that had the similar problem, all those values ​​had to be replaced with some other that would show that there is no such characteristic in the house.
+
+![image](https://user-images.githubusercontent.com/66183125/156956068-15099e39-9894-4239-a24c-cf6062714e06.png)
 
