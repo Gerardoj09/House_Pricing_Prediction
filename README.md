@@ -22,7 +22,6 @@ We will apply different machine learning models with the hope of having the best
 
 ### Questions to answer:
 
-- What neighborhoods have the highest value?
 - What variables most influence the increase or decrease in the price of a house?
 - What variables have less influence on the increase or decrease in the price of a house?
 - What is the average size of a house in Iowa?
@@ -138,3 +137,9 @@ These were the results obtained from the 4 selected models:
 
 ### Gradient Boosting Regressor
 ![image](https://user-images.githubusercontent.com/66183125/156968815-1b91c5e6-aa64-49b6-99aa-9f88603f412c.png)
+
+As we can see, Multiple Linear Regression was the one that obtained the best results both in getting a lower mean square error and a higher R2, so it is the model chosen to predict the price of houses.
+
+### Conclusions
+
+Having carried out this analysis makes it very clear that preparing the database before running the models is too important, since previous tests were carried out before data cleaning and the results were horrible, each variable is different from one another and You have to know how to carefully evaluate which variables are useful for the project you are working on and which ones are not. It is also important to be very careful when making modifications to the variables since this can generate results that are quite different from what you would expect to come out. The most remarkable thing we can say about this first team project is that the decision-making and the way the project develops is not always as one would expect. There were many times when we thought we had the correct result and in the end it was not so, so we had to go back to the beginning to make more modifications and wait to see a new result, this was the process several times until we obtained a result that better convinced us.
