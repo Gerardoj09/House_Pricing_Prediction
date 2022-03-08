@@ -45,7 +45,13 @@ The first thing that was done was to take a quick look at our database, since it
 ### Data Distribution
 After seeing how our database was made up, we started by knowing the target variable 'SalePrice', the first thing we did was checking the distribution of our target variable and from what we can see is skewed to the right, we will have to use the logarithmic function to mitigate its skewness.
 
+Before applying the natural logarithm
+
 ![image](https://user-images.githubusercontent.com/66183125/155928748-00b5a180-669b-435c-a258-4d615d54cb66.png)
+
+After applying the natural logarithm
+
+![image](https://user-images.githubusercontent.com/66183125/157169707-8ccfc92c-2180-4db8-8b04-fe90ad6e65bc.png)
 
 ### Correlation
 As previously mentioned, if we do not count the objective variable, we have a dataset made up of 80 columns from which we have to correctly choose the ones that support the model that we will generate later in order to predict the price of houses. For this reason, we made a heatmap which will show us all the variables that have a correlation greater than .46 with our dependent variable, a correlation of .40 or .50 can be considered as a median correlation, any value below this was considered such as a low correlation or a null correlation between our variables, in addition to choosing variables with no correlation could affect the result of our model. For the same reason, they only chose 13 variables with the highest possible correlation within the numerical variables.
