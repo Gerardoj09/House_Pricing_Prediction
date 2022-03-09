@@ -104,7 +104,7 @@ The examples that we can give would be the neighborhood variable, which would be
 
 ![image](https://user-images.githubusercontent.com/66183125/156962128-92e29e5d-72e7-475e-9f9b-de9f1a8f0180.png)
 
-Then, for all the nominal variables, their transformation to numerics was through creating dummy variables in each of their values. and in the case of ordinal variables, he gave them a specific value depending on the order that each value will carry
+Then, for all the nominal variables, their transformation to numerics was through creating dummy variables in each of their values. and in the case of ordinal variables, we gave them a specific value depending on the order that each value will carry
 
 ![image](https://user-images.githubusercontent.com/66183125/156962305-2fd3edce-99ff-4a34-bc45-79d91da1e8aa.png)
 ![image](https://user-images.githubusercontent.com/66183125/156962341-22f62a1f-8f83-4c3b-9382-3dc0a4972e1a.png)
