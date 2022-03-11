@@ -8,7 +8,7 @@ We will apply different machine learning models with the hope of having the best
 
 You can play around with our ML model/webapp here:
 
-#### https://ml-model-house-pricing-predict.herokuapp.com/database
+#### https://ml-model-house-pricing-predict.herokuapp.com/
 
 ## List Members
 
