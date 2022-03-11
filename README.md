@@ -6,6 +6,10 @@ Buying a house can be a very exhausting process, there is a great variety of hou
 
 We will apply different machine learning models with the hope of having the best possible accuracy when predicting the value of houses. The main reasons for choosing this topic was wanting to know a little more about how the home market works and to test our knowledge of machine learning, we believe that it is a good test for us to know what kind of models we should work with and in addition to this, what kind of treatment should we give to the data.
 
+You can play around with our ML model/webapp here:
+
+#### https://ml-model-house-pricing-predict.herokuapp.com/database
+
 ## List Members
 
 - Josue Emmanuel Aviles Ledezma
@@ -19,7 +23,6 @@ We will apply different machine learning models with the hope of having the best
 - Software: Python 3.7.0, HTML, CSS, SQL, MongoDB, JupyterNotebook
 
 #### Presentation: https://docs.google.com/presentation/d/1RP4-LQ4zja44UlSFVeQPNpQE2bsh4QSUvL4yCp1ztZA/edit?usp=sharing
-#### Interactive presentation: https://ml-model-house-pricing-predict.herokuapp.com/database
 
 ### Questions to answer:
 
