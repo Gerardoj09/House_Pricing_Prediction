@@ -19,6 +19,7 @@ We will apply different machine learning models with the hope of having the best
 - Software: Python 3.7.0, HTML, CSS, SQL, MongoDB, JupyterNotebook
 
 #### Presentation: https://docs.google.com/presentation/d/1RP4-LQ4zja44UlSFVeQPNpQE2bsh4QSUvL4yCp1ztZA/edit?usp=sharing
+#### Interactive presentation: https://ml-model-house-pricing-predict.herokuapp.com/database
 
 ### Questions to answer:
 
